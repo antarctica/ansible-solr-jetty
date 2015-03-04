@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  description: Installs Solr with Jetty using the solr-jetty meta package
+  author: British Antarctic Survey - Web and Applications Team
+  company: British Antarctic Survey
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+      - trusty
+
+armadillo_info:
+  name: Solr Jetty
+  version: 0.1.0
+  source: git@stash.ceh.ac.uk:7999/barc/solr-jetty.git
+  dependencies:
+  - git@stash.ceh.ac.uk:7999/barc/openjdk-7.git#v0.1.0
+
+dependencies:
+  - openjdk-7
